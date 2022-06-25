@@ -7,6 +7,20 @@ void main() {
 class DestiniApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Destini(),
+    );
+  }
+}
+
+class Destini extends StatefulWidget {
+  State<Destini> createState() => _DestiniState();
+}
+
+class _DestiniState extends State<Destini> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
