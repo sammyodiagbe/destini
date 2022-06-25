@@ -35,8 +35,16 @@ class StoryBrain {
         choice2: '')
   ];
 
-  String getStory() {
+  String? getStory() {
     return _storyData[0].storyTitle;
+  }
+
+  String? getChoice1() {
+    return _storyData[0].choice1;
+  }
+
+  String? getChoice2() {
+    return _storyData[0].choice2;
   }
 }
 
