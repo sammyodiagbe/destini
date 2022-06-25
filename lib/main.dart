@@ -41,7 +41,7 @@ class _StoryPageState extends State<StoryPage> {
                 child: Center(
                   child: Text(
                     //TODO: Step 10 - use the storyBrain to get the first story title and display it in this Text Widget.
-                    storyBrain.getStory() ?? '',
+                    storyBrain.getStory() ?? 'hello modafreakers',
                     style: TextStyle(
                       fontSize: 25.0,
                     ),
