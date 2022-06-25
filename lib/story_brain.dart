@@ -35,6 +35,8 @@ class StoryBrain {
         choice2: '')
   ];
 
+  final int _storyNumber = 0;
+
   String? getStory() {
     print(_storyData[0].storyTitle);
     print('---------------');
@@ -49,6 +51,8 @@ class StoryBrain {
   String? getChoice2() {
     return _storyData[0].choice2;
   }
+
+  void nextStory(int choiceNumber) {}
 }
 
 //TODO: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
