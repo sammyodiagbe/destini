@@ -37,6 +37,10 @@ class StoryBrain {
 
   int _storyNumber = 0;
 
+  int getNumber() {
+    return _storyNumber;
+  }
+
   String? getStory() {
     return _storyData[_storyNumber].storyTitle;
   }
@@ -68,7 +72,9 @@ class StoryBrain {
       } else {
         _storyNumber = 4;
       }
-    } else {}
+    } else {
+      _storyNumber = 0;
+    }
   }
 }
 
